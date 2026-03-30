@@ -1,40 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
+</head>
+<body class="page">
     <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
+        <div class="header__rec" aria-hidden="true">REC</div>
+        <nav class="header__theme-menu">
+            <ul class="header__theme-menu-list">
+                <li class="header__theme-menu-item">
+                    <button class="header__theme-menu-button header__theme-menu-button_type_sun" type="button">День</button>
+                </li>
+                <li class="header__theme-menu-item">
+                    <button class="header__theme-menu-button header__theme-menu-button_type_auto" type="button">Авто</button>
+                </li>
+                <li class="header__theme-menu-item">
+                    <button class="header__theme-menu-button header__theme-menu-button_type_moon header__theme-menu-button_active" type="button" disabled>Неон</button>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="header__title">no focus</h1>
+        <p class="header__description title-decor">Что делать, когда не можешь делать ничего<br>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
     </header>
-  </body>
+
+    <main class="main">
+        <section class="section">
+            <h2 class="section__title">Почему сосредоточиться так сложно</h2>
+            <div class="section__content">
+                <article class="card">
+                    <h3 class="card__title title-decor">Многозадачность</h3>
+                    <p class="card__text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам? И почему она на самом деле не помогает, а только вредит? Многие исследования доказывают, что мозгу не нравится быстро переключаться с одной задачи на другую. Давайте разберёмся, как это влияет на нашу продуктивность и какие мифы о многозадачности давно пора развенчать.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title title-decor">Дофамин</h3>
+                    <p class="card__text">С дофамином всё интереснее. И тут мы сталкиваемся с парадоксом: он и помогает сосредоточиться, и мешает. Дофамин — это важнейший нейромедиатор, участвующий в системе вознаграждения мозга. Но он также связан с прокрастинацией и поиском мгновенного удовольствия. Как найти баланс и использовать дофамин во благо, а не во вред?</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title title-decor">Эффект прокрастинации</h3>
+                    <p class="card__text">Прокрастинация — это не просто лень. Это сложный психологический феномен, который заставляет нас откладывать важные дела на потом. Учёные выяснили, что прокрастинация связана с работой префронтальной коры и лимбической системы. Почему мы выбираем сиюминутное удовольствие вместо долгосрочных целей? И как с этим бороться?</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Что можно сделать, чтобы не отвлекаться?</h2>
+            <div class="section__content section__content_grid">
+                <article class="card">
+                    <h3 class="card__title title-decor">Медитация и осознанность</h3>
+                    <p class="card__text">Практики медитации и осознанности помогают тренировать внимание и снижать уровень стресса. Исследования показывают, что регулярная медитация улучшает способность концентрироваться и повышает продуктивность. Начните с 5-10 минут в день — и вы заметите разницу уже через несколько недель.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title title-decor">Помидорная техника</h3>
+                    <p class="card__text">Техника Pomodoro — это метод управления временем, при котором работа разбивается на интервалы по 25 минут с короткими перерывами. Это помогает сохранять фокус и избегать переутомления. Попробуйте: 25 минут работы, 5 минут отдыха. Повторите 4 раза, затем сделайте длинный перерыв.</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title title-decor">«Съешь лягушку»</h3>
+                    <p class="card__text">«Съесть лягушку» — значит сделать самую неприятную или сложную задачу в первую очередь, пока вы ещё полны энергии. Этот метод помогает избавиться от прокрастинации и почувствовать удовлетворение от выполненной работы. Не откладывайте сложное на потом — начните с него!</p>
+                </article>
+                <article class="card">
+                    <h3 class="card__title title-decor">Уберите лишнее</h3>
+                    <p class="card__text">Ваше рабочее пространство напрямую влияет на вашу продуктивность. Уберите всё лишнее со стола, закройте ненужные вкладки в браузере, отключите уведомления на телефоне. Чистота и порядок вокруг помогают очистить мысли и сосредоточиться на главном.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section_wide">
+            <h2 class="section__title">Почему так сложно сконцентрироваться?</h2>
+            <div class="section__content">
+                <article class="card card_wide">
+                    <h3 class="card__title title-decor">Действительно сложно</h3>
+                    <p class="card__text">В современном мире нас окружает бесконечный поток информации: соцсети, мессенджеры, новости, реклама. Мозг просто не успевает обрабатывать всё это, и мы теряем способность к глубокой концентрации. Добавьте сюда хронический стресс, недосып и неправильное питание — и получите идеальный рецепт рассеянного внимания. Но выход есть, и он проще, чем кажется.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2 class="gallery__title title-decor">А можно сделать что-то с этим?</h2>
+            <div class="gallery__grid">
+                <img class="gallery__image gallery__image_sunset" src="./images/sun.png" alt="Закат над горами" loading="lazy">
+                <img class="gallery__image gallery__image_butterfly" src="./images/butterfly.png" alt="Красивая бабочка на цветке" loading="lazy">
+                <img class="gallery__image gallery__image_street" src="./images/street.png" alt="Улица города с часами" loading="lazy">
+                <img class="gallery__image gallery__image_rose" src="./images/rose.png" alt="Цветущая роза" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer decorated-zone">
+        <h2 class="footer__title">focus</h2>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
 </html>
